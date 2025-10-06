@@ -1,3 +1,4 @@
+import React from 'react';
 import type { FormInputProps } from './InputField.types';
 
 export default function InputField({

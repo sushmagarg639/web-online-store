@@ -1,4 +1,4 @@
-import { lazy, useMemo, Suspense } from 'react';
+import React, { lazy, useMemo, Suspense } from 'react';
 import { generateStoreItems } from '../utils/itemsGenerator';
 import LoadingFallback from '../components/LoadingFallback';
 import ErrorBoundary from '../components/ErrorBoundary';

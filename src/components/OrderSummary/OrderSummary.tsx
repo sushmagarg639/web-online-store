@@ -1,3 +1,4 @@
+import React from 'react';
 import type { StoreItemProps } from '../../types/global.types';
 import styles from './OrderSummary.module.scss';
 import { formattedName } from '../../utils/formattedName';

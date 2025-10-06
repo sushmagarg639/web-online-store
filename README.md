@@ -1,75 +1,71 @@
-# React + TypeScript + Vite
+<h1>🛒Online HeartStore Application ❤️</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a 3-page online store application built with React, TypeScript, HTML, and CSS — without using any third-party libraries or templates.
 
-Currently, two official plugins are available:
+<h2>🚀 Features</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>📄 Page 1: Store Item List</h3>
 
-## React Compiler
+- Generates a list of 20 store items on startup.
+- Displays items in a responsive HTML grid.
+- Each item shows:
+  - Image
+  - Name
+  - Description
+  - Suggested price
+  - Actual price
+  - Discount percentage
+- Supports:
+  - Filtering by name (real-time search)
+  - Sorting by:
+  - Name (A–Z, Z–A)
+  - Price (Low–High, High–Low)
+- Buy Now button for each item navigates to the checkout form.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+<h3>📄 Page 2: Checkout Form</h3>
 
-Note: This will impact Vite dev & build performances.
+- Collects billing information:
+- Personal Info (Full Name, Email, Phone Number)
+- Billing Address (Address line 1, City, Pincode etc)
+- Payment Details (Credit card number, CVV etc)
+- Fields include validation for required/input format as needed
+- Displays selected item summary
+- Submit Order button proceeds to confirmation page (if all the fields pass validation).
 
-## Expanding the ESLint configuration
+<h3>📄 Page 3: Order Confirmation</h3>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Shows Order completion with order details
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<h2>🛠️ Tech Stack</h2>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React - For UI framework
+- TypeScript - For Type safety
+- HTML/CSS - For Markup & styling
+- Vite - For Project bundler & dev tool
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<h2> ▶️ Getting Started</h2>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Clone the repo and Install dependencies:
+  `npm install`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Run the development server:
+  `npm run dev`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<h2>🔎 Notes</h2>
+
+- Form validation runs on blur and submit.
+- Images and icons used are placeholders and locally hosted.
+- Component styles are written using CSS modules.
+- Project follows clean code principles and accessible markup.
+
+<h2>📸 Screenshots</h2>
+
+Page 1- Store Item List
+
+Page 2- Checkout Form
+
+Page 3- Order Confirmation
+
+</h2>🧑‍💻 Author</h2>
+
+[Sushma Garg]

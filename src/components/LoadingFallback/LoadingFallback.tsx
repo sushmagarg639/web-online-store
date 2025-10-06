@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './LoadingFallback.module.scss';
 
 export default function LoadingFallback() {

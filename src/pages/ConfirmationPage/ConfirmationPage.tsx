@@ -1,3 +1,4 @@
+import React from 'react';
 import OrderSummary from '../../components/OrderSummary';
 import { maskCardNumber } from '../../utils/maskCardNumber';
 import { useCustomContext } from '../../hooks/useCustomContext';

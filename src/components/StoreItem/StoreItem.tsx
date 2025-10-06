@@ -1,3 +1,4 @@
+import React from 'react';
 import type { StoreItemProps } from '../../types/global.types';
 import { StorePurchaseContext } from '../../context/StorePurchaseContext';
 import { useCustomContext } from '../../hooks/useCustomContext';
