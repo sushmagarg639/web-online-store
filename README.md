@@ -61,10 +61,14 @@ This is a 3-page online store application built with React, TypeScript, HTML, an
 <h2>📸 Screenshots</h2>
 
 Page 1- Store Item List
+<img width="2880" height="8016" alt="localhost_5173_ (4)" src="https://github.com/user-attachments/assets/de1f94a1-37a3-461f-8391-8a73dc5eff09" />
+
 
 Page 2- Checkout Form
+<img width="2880" height="3294" alt="localhost_5173_ (1)" src="https://github.com/user-attachments/assets/71678ccc-b27c-4012-8001-52e274c3a1a4" />
 
 Page 3- Order Confirmation
+<img width="2880" height="1338" alt="localhost_5173_ (2)" src="https://github.com/user-attachments/assets/19b17b34-a2ba-475b-aef1-3481d07da15c" />
 
 </h2>🧑‍💻 Author</h2>
 
