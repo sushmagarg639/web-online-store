@@ -7,7 +7,10 @@ import { formattedName } from '../../utils/formattedName';
 
 export default function StoreItem({ item }: { item: StoreItemProps }) {
   const discountPercentage = () => {
-    return ((parseFloat(item.actualPrice) / parseFloat(item.suggestedPrice)) * 100).toFixed(2);
+    const suggestedPrice = parseFloat(item.suggestedPrice);
+    const actualPrice = parseFloat(item.actualPrice);
+    const discount = ((suggestedPrice - actualPrice) / suggestedPrice) * 100;
+    return discount.toFixed(2);
   };
 
   const { onBuy } = useCustomContext(StorePurchaseContext, 'StorePurchaseContext');
