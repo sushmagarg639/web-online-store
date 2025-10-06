@@ -1,0 +1,51 @@
+@use '../../styles/abstracts' as *;
+
+.ordersummary {
+  border-radius: $border-radius;
+  padding: $space-md;
+  margin: $space-md 0;
+
+  &.confirmation {
+    background-color: $color-monochrome-1;
+    color: $color-text-inverse;
+    border-color: transparent;
+  }
+
+  &.checkout {
+    background-color: $color-alt1;
+    border: 2px solid $color-primary;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100px;
+      max-height: 100px;
+      object-fit: cover;
+    }
+  }
+
+  &__about {
+    margin: $space-md;
+
+    h3 {
+      text-transform: capitalize;
+    }
+  }
+
+  &__total {
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
+    text-align: right;
+
+    @include respond-to(md) {
+      font-size: 1.375rem; /* 22px */
+    }
+
+    @include respond-to(lg) {
+      font-size: 1.5rem; /* 24px */
+    }
+  }
+}

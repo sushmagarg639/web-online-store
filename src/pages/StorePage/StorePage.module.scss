@@ -1,0 +1,45 @@
+@use '../../styles/abstracts' as *;
+
+.wrapper {
+  text-align: center;
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond-to(md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__filter-wrapper,
+    &__sort-wrapper {
+      margin: $space-sm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include respond-to(md) {
+        width: 45%;
+      }
+
+      label {
+        margin-right: $space-xs;
+      }
+
+      input,
+      select {
+        flex-grow: 1;
+        width: auto;
+      }
+    }
+  }
+
+  .items {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

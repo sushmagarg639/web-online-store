@@ -1,0 +1,22 @@
+@use '../../styles/abstracts' as *;
+
+.wrapper {
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: $space-md;
+  }
+  .order {
+    padding: $space-md;
+    margin: $space-sm 0;
+    background-color: $color-monochrome-6;
+    box-shadow: 0 0 $box-shadow $color-monochrome-4;
+    border-radius: $border-radius;
+
+    &__number {
+      font-weight: bold;
+    }
+  }
+}

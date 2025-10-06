@@ -1,0 +1,59 @@
+@use '../abstracts' as *;
+
+input,
+select {
+  font-size: $font-size-sm;
+  padding: 0.5em;
+  margin: 0.25em;
+  width: 100%;
+
+  @include respond-to(md) {
+    font-size: $font-size-base;
+  }
+
+  @include respond-to(lg) {
+    font-size: $font-size-lg;
+  }
+
+  &[aria-invalid='true'] {
+    border: 2px solid $color-error;
+  }
+}
+
+fieldset {
+  border: none;
+  padding: $space-md;
+  margin: $space-sm 0;
+
+  label {
+    margin-top: 0.25em;
+  }
+}
+
+legend {
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  @include respond-to(md) {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  @include respond-to(lg) {
+    font-size: 1.5rem; /* 24px */
+  }
+}
+
+form {
+  padding: $space-sm 0;
+  @include respond-to(md) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .error {
+    color: $color-error;
+    font-size: 0.75rem;
+    @include respond-to(md) {
+      font-size: 0.875rem;
+    }
+  }
+}
